@@ -1,6 +1,5 @@
 'use client'
 
-import { useCallback } from 'react'
 import ReactFlow, {
   Node,
   Edge,
@@ -113,8 +112,8 @@ const initialEdges: Edge[] = [
 ]
 
 export function FullSystemDiagram() {
-  const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes)
-  const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges)
+  const [nodes, , onNodesChange] = useNodesState(initialNodes)
+  const [edges, , onEdgesChange] = useEdgesState(initialEdges)
 
   return (
     <div style={{ width: '100%', height: '900px' }} className="bg-slate-900/50 rounded-2xl">

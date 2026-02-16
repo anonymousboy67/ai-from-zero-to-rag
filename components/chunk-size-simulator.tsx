@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
 
 const sampleText = `Artificial intelligence (AI) is transforming how we interact with technology. Machine learning, a subset of AI, enables systems to learn from data without explicit programming. Deep learning uses neural networks with multiple layers to process complex patterns. Natural language processing allows computers to understand human language. Computer vision enables machines to interpret visual information. These technologies power applications from virtual assistants to autonomous vehicles. AI systems can analyze vast amounts of data quickly, identifying patterns humans might miss. However, AI also raises important ethical questions about privacy, bias, and job displacement. As AI continues to advance, society must balance innovation with responsible development. The future of AI holds both tremendous promise and significant challenges that we must address thoughtfully.`
 

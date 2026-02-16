@@ -124,7 +124,7 @@ export default function Home() {
 
           <div className="space-y-4">
             {[
-              'What AI and LLMs really are (explained like you\'re 7)',
+              "What AI and LLMs really are (explained like you're 7)",
               'How context windows and tokens work',
               'Transform text into searchable vectors',
               'Build semantic search with vector databases',

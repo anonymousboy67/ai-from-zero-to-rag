@@ -59,7 +59,7 @@ export default function JourneyPage() {
                 viewport={{ once: true, margin: '-100px' }}
                 transition={{ duration: 0.6 }}
               >
-                <ChapterCard chapter={chapter} index={index} />
+                <ChapterCard chapter={chapter} />
               </motion.div>
             ))}
           </div>

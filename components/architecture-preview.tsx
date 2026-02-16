@@ -36,7 +36,7 @@ export function ArchitecturePreview() {
         ))}
       </div>
       <p className="text-center mt-8 text-muted-foreground">
-        Click "Start Learning" to explore each component in detail
+        Click &quot;Start Learning&quot; to explore each component in detail
       </p>
     </div>
   )

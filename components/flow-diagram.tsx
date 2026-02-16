@@ -1,6 +1,5 @@
 'use client'
 
-import { useCallback } from 'react'
 import ReactFlow, {
   Node,
   Edge,
@@ -401,8 +400,8 @@ const getFlowData = (chapterId: number): { nodes: Node[]; edges: Edge[] } => {
 
 export function FlowDiagram({ chapterId }: FlowDiagramProps) {
   const flowData = getFlowData(chapterId)
-  const [nodes, setNodes, onNodesChange] = useNodesState(flowData.nodes)
-  const [edges, setEdges, onEdgesChange] = useEdgesState(flowData.edges)
+  const [nodes, , onNodesChange] = useNodesState(flowData.nodes)
+  const [edges, , onEdgesChange] = useEdgesState(flowData.edges)
 
   return (
     <div style={{ width: '100%', height: '600px' }} className="bg-slate-900/50 rounded-lg">

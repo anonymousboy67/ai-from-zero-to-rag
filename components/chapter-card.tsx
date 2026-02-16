@@ -2,9 +2,8 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown, ChevronUp, Lightbulb, BookOpen, Code, Copy, Check } from 'lucide-react'
+import { ChevronDown, ChevronUp, Lightbulb, BookOpen, Code } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
 import { Chapter } from '@/lib/chapters-data'
 import { CodeBlock } from '@/components/code-block'
 import { FlowDiagram } from '@/components/flow-diagram'
@@ -12,10 +11,9 @@ import { MermaidDiagram } from '@/components/mermaid-diagram'
 
 interface ChapterCardProps {
   chapter: Chapter
-  index: number
 }
 
-export function ChapterCard({ chapter, index }: ChapterCardProps) {
+export function ChapterCard({ chapter }: ChapterCardProps) {
   const [expandedSections, setExpandedSections] = useState({
     eli5: false,
     technical: false,
@@ -56,7 +54,7 @@ export function ChapterCard({ chapter, index }: ChapterCardProps) {
           >
             <div className="flex items-center gap-3">
               <Lightbulb className="w-6 h-6 text-yellow-400" />
-              <h3 className="text-xl font-semibold">Explain Like I'm 7</h3>
+              <h3 className="text-xl font-semibold">Explain Like I&apos;m 7</h3>
             </div>
             {expandedSections.eli5 ? (
               <ChevronUp className="w-5 h-5" />
